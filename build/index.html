@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+     <!-- Swiper Slider -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+ 
+  <body>     
+    <!-- page header -->
+  <header class="page-header">
+    <!-- Burger button -mobile -->
+    <div class="burger" id="burger">
+      <div class="burger-icon"></div>
+    </div>
+    <!-- END Burger button     -->
+    <!-- Contact button -mobile -->
+    <div class="contact-btn" id="contact-btn">
+      <div class="contact-btn-icon"></div>
+    </div>
+    <!-- END Contact button -mobile -->
+    <div class="page-header_contact">
+      <div class="page-header_wrapper container">
+        <ul class="page-header_contact-list">
+          <li class="page-header_contact-item ">
+            <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+            <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+          </li>
+          <li class="page-header_contact-item ">
+            <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+            <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+          </li>
+          <li class="page-header_contact-item">
+            <img class="item-svg" src="images/icons/mail.svg" alt="">
+            <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="page-header_contact-list">
+          <li>      
+            <a class="social-link link-facebook" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="social-link link-instagram" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="social-link link-telegram" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="social-link link-viber" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="social-link link-whatsapp" href="#">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header_menu container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-light.png" alt="Logo" width="143" height="36" />
+            </a>
+          </div>
+            <nav class="navbar_menu">
+              <ul class="navbar_menu-list">
+                <li class="navbar_menu-item is-active js-menuItems">
+                  <a class="navbar_menu-link" href="index.html">Главная</a
+                  >
+                </li>
+                <li class="navbar_menu-item js-menuItems">
+                  <a class="navbar_menu-link" href="#"
+                    >Наши маршруты</a
+                  >
+                </li>
+                <li class="navbar_menu-item js-menuItems">
+                  <a class="navbar_menu-link" href="#">Наши услуги</a>
+                </li>
+                <li class="navbar_menu-item js-menuItems">
+                  <a class="navbar_menu-link" href="#">Наш автопарк</a>           
+                </li>
+                <li class="navbar_menu-item js-menuItems">
+                  <a class="navbar_menu-link" href="#">Купить билеты</a>
+                </li>
+              </ul>
+            </nav>
+    </div>
+  </header>
+  <!-- page banner -->
+  <main>
+    <section class="section-banner">
+        <div class="section-banner_text-block container">
+          <h1 class="section-banner_title main-title">Автобусные рейсы </br> <span>Киев - Санкт-Петербург - Киев</span></h1>
+           <p class="section-banner_text">Прямые рейсы без пересадок на таможне, без предоплаты и наценок</p>
+        </div>
+       <div class="section-banner_book-block container">
+          <h3 class="section-banner_book-block--title">Поиск автобусных билетов</h3>
+          <form class="book-form">
+            <div class="book-form_group-block">
+              <div class="book-form_group-block--title">Путешествие из:</div>
+              <select  class="book-form_group-block--select" name="from" required>
+                <option value="Kiev">Киев</option>
+                <option value="Sankt-Peterburg">Санкт-Петербург</option>
+            </select>           
+            </div>
+            <div class="book-form_group-block">
+              <div class="book-form_group-block--title">Путешествие до:</div>
+              <select class="book-form_group-block--select" name="to" required>
+                <option value="Kiev">Киев</option>
+                <option value="Sankt-Peterburg">Санкт-Петербург</option>
+            </select>            
+            </div>
+            <div class="book-form_group-block">
+              <div class="book-form_group-block--title">Дата отправки:</div>
+             <input class="book-form_group-block--select" type="date">           
+            </div>
+            <div class="book-form_group-block">
+              <div class="book-form_group-block--title">Количество пассажиров:</div>
+             <input  class="book-form_group-block--select" type="number">           
+            </div>
+            <button class="btn-color">Найти</button>
+          </form>
+       </div>
+    
+      </section>
+    <section class="page-advantage">
+        <div class="container">
+            <h2 class="section_title">Наши услуги</h2>
+        <div class="page-advantage_list">
+            <div class="page-advantage_item">
+                <div class="page-advantage_item--img">
+                    <img src="images/icons/wi-fi.svg" alt="wi-fi">
+                </div>
+                <h5 class="section_subtitle ">Бесплатный WI-FI</h5>
+                <p>Все места в автобусе оснащены </br> Wi-Fi и розетками (220v).</p>
+            </div>
+            <div class="page-advantage_item">
+                <div class="page-advantage_item--img">
+                    <img src="images/icons/coffee.svg" alt="coffee">
+                </div>
+                <h5 class="section_subtitle ">Бесплатные горячие напитки</h5>
+                <p>Бесплатный чай и кофе на протяжении всего маршрута</p>
+            </div>
+            <div class="page-advantage_item">
+                <div class="page-advantage_item--img">
+                    <img src="images/icons/hand-touching-tablet-screen.svg" alt="planshet">
+                </div>
+                <h5 class="section_subtitle">Мультимедия</h5>
+                <p>Наш автобус оборудован планшетами (которые расположены напротив каждого сиденья)</p>
+            </div>
+            <div class="page-advantage_item">
+                <div class="page-advantage_item--img">
+                    <img src="images/icons/seat.svg" alt="seat">
+                </div>
+                <h5 class="section_subtitle ">Удобные сиденья</h5>
+                <p>Кресла с поддержкой поясницы и механизмом индивидуальной регулировки, увеличенное расстояние до и между сидениям. Pемни безопасности.</p>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="page-route">
+        <div class="container">
+            <h2 class="section_title">Наши муршруты</h2>
+            <ul class="page-route_list">
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+                <li class="page-route_item">
+                    <a class="page-route_link" href="#">
+                        <div class="page-route_link--top">
+                        <img class="page-route_link--img" src="images/питер.jpg" alt="Питер">
+                          <div class="page-route_link--price"> 
+                            <span>3 000 руб. / 1 200 грн.</span>
+                        </div>
+                        </div>
+                        <div class="page-route_text-block">
+                            <span class="route-name section_subtitle ">Киев</span>
+                            <span class="route-name section_subtitle">&rarr;</span>
+                            <span class="route-name section_subtitle">Санкт-Петербург</span>
+                            <div class="route-hour"> 22 часа</div>
+                        </div>                 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page-bus">
+        <h2 class="section_title">Наши автобусы</h2>
+          <!-- Swiper -->
+      <div class="page-bus_slider swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  </body> 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
