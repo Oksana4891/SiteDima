@@ -1,0 +1,16 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'variables.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+@import "./components/text.scss";
+@import "./components/buttons.scss";
+
+
+@import "./layout/page-header";
+@import "./layout/page-banner";
+@import "./layout/page-advantage";
+@import "./layout/page-route";
+@import "./layout/page-bus";

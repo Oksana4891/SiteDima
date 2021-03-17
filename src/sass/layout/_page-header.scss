@@ -1,0 +1,146 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.page-header_contact {
+  background-color: #fff;
+  padding: 15px 0px;
+}
+
+.page-header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.page-header_contact-list {
+  display: flex;
+}
+
+.page-header_contact-item {
+  margin-right: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.page-header_contact-link {
+  color: $main-title-color;
+  padding-left: 15px;
+
+  &:hover {
+    color: $main-background-color;
+  }
+}
+
+.item-svg {
+  width: 32px;
+  height: 32px;
+  padding: 2px 7px;
+  background-color: $main-background-color;
+  border-radius: 50%;
+  border: 2px solid $main-background-color;
+  transition: 0.3s all ease;
+}
+
+.page-header_contact-item:hover .item-svg {
+  background-color: #fff;
+}
+
+.social-link {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: #c2c2c2;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  margin-right: 10px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.link-facebook {
+  background-image: url(../images/icons/facebook.svg);
+
+  &:hover {
+    background-color: #3b5998;
+  }
+}
+
+.link-instagram {
+  background-image: url(../images/icons/instagram.svg);
+
+  &:hover {
+    background-color: #E1306C;
+  }
+}
+
+.link-telegram {
+  background-image: url(../images/icons/telegram.svg);
+
+  &:hover {
+    background-color: rgb(0, 136, 204);
+  }
+}
+
+.link-viber {
+  background-image: url(../images/icons/viber.svg);
+
+  &:hover {
+    background-color: #8f5db7;
+  }
+}
+
+.link-whatsapp {
+  background-image: url(../../images/icons/whatsapp.svg);
+
+  &:hover {
+    background-color: #43d854;
+  }
+}
+
+.page-header_menu {
+  display: flex;
+  padding-top: 30px;
+}
+
+.logo {
+  width: 97px;
+  height: 57px;
+}
+
+.navbar_menu {
+  margin: auto;
+
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    margin-right: 30px;
+    padding: 5px 20px 5px 15px;
+    transition: 0.3s all ease;
+
+    &.is-active, &:hover {
+      background-color: $decoration-color;
+    }
+
+    &.is-active .navbar_menu-link, &:hover .navbar_menu-link{
+      color: $hover-text-color;
+    }
+  }
+
+  &-link {
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s all ease;
+  }
+}
+

@@ -1,0 +1,46 @@
+.btn-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  padding: 9px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  border-width: 2px;
+  transition: 0.3s;
+  backface-visibility: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    z-index: -1;
+    width: 0;
+    height: 120%;
+    transition: 0.4s all ease;
+    background: #fff;
+    transform: skewX(15deg);
+  }
+
+  &:hover:after {
+    left: -10%;
+    width: 120%;
+  }
+}
+
+.btn-color {
+  border: none;
+  min-width: 147px;
+  min-height: 50px;
+  color: $hover-text-color;
+  padding: 9px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: $hover-text-color;
+  background-color: $decoration-color;
+  border-color: $decoration-color;
+}
