@@ -53,3 +53,19 @@
     font-size: 20px;
   }
 }
+
+.page-title {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 500;
+
+  & span {
+    font-weight: 700;
+    color: $decoration-color;
+  }
+  @media (min-width: 768px) {
+    line-height: 1.13333;
+    font-size: 40px;
+  }
+}

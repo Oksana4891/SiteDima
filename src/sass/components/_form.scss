@@ -1,0 +1,14 @@
+.form_back-call {
+  margin-top: 20px;
+
+  input {
+    min-height: 50px;  
+    width: 250px;
+    padding: 9px;
+    color: $add-background-color;
+    background-color: $section-background;
+    border-color: rgba(24, 55, 122, 0.3);
+    border-right: none;
+    margin-right: -5px;
+  }
+}

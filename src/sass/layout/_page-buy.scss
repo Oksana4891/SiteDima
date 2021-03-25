@@ -1,0 +1,77 @@
+.page-buy {
+  padding: 30px 0px 40px;
+
+  &_title-block {
+    display: block;
+    padding: 40px 10%;
+    background: $add-background-color;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+
+    &--btn {
+      button {
+        margin-top: 10px;
+        min-height: 65px;
+      }
+    }
+  }
+
+  &_contact-block {
+    background: url(../images/call.png);
+    background-position: 60% bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_block-left {
+    width: 40%;
+    &--contact {
+      display: block;
+      margin: 30px 0px;
+  
+      li {
+        margin: 10px;
+      }
+    }
+  }
+
+  &_block-right {
+    width: 25%;
+
+    &--info {
+      margin: 30px 15px;
+
+      button {
+        border: 1px solid $main-text-color;
+      }
+    }
+
+    &--text {
+      padding-top: 20px;
+
+      span {
+        text-decoration: underline;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &_block-center {
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}

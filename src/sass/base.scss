@@ -57,6 +57,7 @@ ul {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0px 50px;
   @media screen and (max-width: 1199px) {
     max-width: 960px;
   }
