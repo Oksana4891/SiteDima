@@ -4,12 +4,12 @@
 @import 'variables.scss';
 @import 'normalize.scss';
 @import 'base.scss';
+@import 'animation.scss';
 
 @import "./components/text.scss";
 @import "./components/buttons.scss";
 @import "./components/form";
-
-
+@import "./components/button-call";
 @import "./layout/page-header";
 @import "./layout/page-banner";
 @import "./layout/page-advantage";
@@ -17,5 +17,4 @@
 @import "./layout/page-bus";
 @import "./layout/page-buy";
 @import "./layout/footer";
-
 @import "./layout/pageRoute";

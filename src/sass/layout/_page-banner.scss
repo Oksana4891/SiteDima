@@ -29,6 +29,10 @@
     top: 250px;
   }
 
+  &_text {
+    animation: fadeOn 2s ease;
+  }
+
   &_book-block {
     color: #fff;
     padding: 23px 42px 28px;

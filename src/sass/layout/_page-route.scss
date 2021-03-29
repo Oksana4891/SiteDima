@@ -1,5 +1,5 @@
 .page-route {
-  padding: 80px 0px 40px;
+  padding: 120px 0px 40px;
   background-color: $section-background;
 
   &_list {
@@ -12,8 +12,16 @@
   &_item {
     background-color: #fff;
     width: 30%;
-    margin-top: 40px;
-    transition: .3s all ease;
+    margin-top: 40px;  
+    opacity: 0;
+    transform: translate(0px, 20%);
+    transition: all 0.3s ease-in 0s;
+
+    &.is_active {
+      opacity: 1;
+      transform: translate(0px, 0px);
+
+    } 
 
     &:hover {
       box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);

@@ -1,0 +1,70 @@
+
+.pulsation {
+  animation-name: pulsation;
+  animation-duration: 1s;
+}
+
+@keyframes pulsation {
+  0% {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border-color: #c2c2c2;
+  }
+  
+  50% {
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-color: #18377a;
+  }
+
+  100% {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border-color: #c2c2c2;
+  }
+}
+
+
+.fadeUp {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeOn {
+  animation-name: fadeOn;
+  animation-duration: 1s;
+}
+
+
+@keyframes fadeOn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 80%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+

@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header" id="main">
   <!-- Burger button -mobile -->
   <div class="burger" id="burger">
     <div class="burger-icon"></div>
@@ -49,7 +49,8 @@
       </ul>
     </div>
   </div>
-  <div class="page-header_menu container">
+  <div class="page-header_menu--block js-fixedMenu">
+    <div class="page-header_menu container">
         <div class="logo">
           <a href="index.html">
             <img src="../images/логотип_-removebg-preview.png" alt="Logo"/>
@@ -58,24 +59,25 @@
           <nav class="navbar_menu">
             <ul class="navbar_menu-list">
               <li class="navbar_menu-item is-active js-menuItems">
-                <a class="navbar_menu-link" href="index.html">Главная</a
+                <a class="navbar_menu-link" href="#main">Главная</a
                 >
               </li>
               <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#"
+                <a class="navbar_menu-link" href="#route"
                   >Наши маршруты</a
                 >
               </li>
               <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#">Наши услуги</a>
+                <a class="navbar_menu-link" href="#services">Наши услуги</a>
               </li>
               <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#">Наш автопарк</a>           
+                <a class="navbar_menu-link" href="#bus">Наш автопарк</a>           
               </li>
               <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#">Купить билеты</a>
+                <a class="navbar_menu-link" href="#ticket">Купить билеты</a>
               </li>
-            </ul>
-          </nav>
+            </ul>     
+          </nav>   
+        </div>
   </div>
 </header>

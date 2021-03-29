@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-     <!-- Swiper Slider -->
-     <link
-     rel="stylesheet"
-     href="https://unpkg.com/swiper/swiper-bundle.min.css"
-   />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
- 
-  <body>     
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Placeholder title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
   //= html/page-header.html
   <main>
     //= html/page-banner.html
     //= html/page-advantage.html
     //= html/page_route.html
     //= html/page-bus.html
-    //= html/page-buy.html
+    <section class="page-buy" id="ticket">
+      <div class="page-buy_title-block">
+          <h2 class="page-buy_title-block--title js-animate">Купить автобусные билеты</h2>
+          <div class="page-buy_title-block--btn">
+              <button class="btn-color">Купить билет</button>
+          </div>
+      </div>
+      <div class="container">
+          <div class="page-buy_contact-block">
+              <div class="page-buy_block-left">
+                  <h4 class="section_subtitle">Контакты для заказа билетов</h4>
+                  <p>    У нас  работает телефонная служба продаж, вы можете связаться с нашим менеджером по телефону и забронировать нужный вам билет.</p>
+                  <ul class="page-buy_block-left--contact page-header_contact-list">
+                      <li class="page-header_contact-item ">
+                          <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                          <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                      </li>
+                      <li class="page-header_contact-item ">
+                          <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                          <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                      </li>
+                      <li class="page-header_contact-item">
+                          <img class="item-svg" src="images/icons/mail.svg" alt="">
+                          <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
+                      </li>
+                  </ul>
+                  <ul class="page-header_contact-list">
+                      <li>
+                          <a class="social-link link-telegram" href="#">
+                          </a>
+                      </li>
+                      <li>
+                          <a class="social-link link-viber" href="#">
+                          </a>
+                      </li>
+                      <li>
+                          <a class="social-link link-whatsapp" href="#">
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="form_back-call">
+                      <input class="orm_back-call--input" placeholder="Ваш телефон" type="text" name="phone">
+                      <button class="btn-transparent">Перезвонить</button>
+                  </div>
+              </div>
+          <div class="page-buy_block-right">
+              <h4 class="section_subtitle">Бронировать билеты онлайн</h4>
+              <div class="page-buy_block-right--info">
+                  <button class="btn-color">Купить билет</button>
+                  <div class="page-buy_block-right--text">Вы можете купить билеты на наши маршруты через интернет платформу продаж: </br> 
+                      <span>busfor.ua,</span> </br> 
+                      <span> busfor.ru,</span> </br>
+                      <span>infobus.eu,</span></br>
+                      <span>bus.tutu.ru.</span>
+                   </div>
+              </div>
+          </div>
+      </div>
+      <div class="page-buy_block-center"> Также билеты на автобус Киев-Санкт-Петербург, Санкт-Петербург-Киев вы можете
+          традиционно приобрести <span> в кассах автовокзалов</span> Киева, Чернигова, Новгород-Сиверского, Брянска,
+          Смоленска, Пскова и Санкт-Петербурга.
+      </div>
+      </div>
+  </section>
   </main>
+  //= html/call-btn.html
   //= html/footer.html
-  </body> 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </html>
