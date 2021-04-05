@@ -1,16 +1,32 @@
 .page-advantage {
   padding: 120px 0px 40px;
+  @media (max-width: 768px) {
+    padding-top: 80px;
+  }
 
   &_list {
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
   }
 
   &_item {
     width: 25%;
     padding: 15px;
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+      width: 50%;
+      padding-top: 30px;
+    }
+  
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
 
     &--img {
       position: relative;
@@ -49,6 +65,5 @@
         padding-top: 20px;
       }
     }
-  
   }
 }

@@ -1,9 +1,11 @@
 .form_back-call {
-  margin-top: 20px;
-
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  
   input {
-    min-height: 50px;  
-    width: 250px;
+    min-height: 50px;
+    width: 300px;
     padding: 9px;
     color: $add-background-color;
     background-color: $section-background;

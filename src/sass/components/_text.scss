@@ -1,5 +1,5 @@
 .main-title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
   color: #fff;
   animation: fadeUp 2s ease;
@@ -7,11 +7,11 @@
   & span {
     font-weight: 700;
     color: $decoration-color;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       font-size: 45px;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     font-size: 60px;
     line-height: 0.9;
     padding-bottom: 25px;

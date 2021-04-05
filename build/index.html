@@ -15,24 +15,31 @@
 
 <body>
   <header class="page-header" id="main">
-    <!-- Burger button -mobile -->
+    <!-- Header mobile -->
+    <div class="header_inner-mobile">
+      <a class="logo-mobile" href="index.html">
+        <img src="images/logo-light.png" alt="logo" />
+      </a>
+        <div class="page-header_contact-item">
+          <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+          <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+        </div>
     <div class="burger" id="burger">
-      <div class="burger-icon"></div>
+      <div class="burger_icon">
+        <div class="burger-line"></div>
+      </div>
+      <p>Меню</p>
     </div>
-    <!-- END Burger button     -->
-    <!-- Contact button -mobile -->
-    <div class="contact-btn" id="contact-btn">
-      <div class="contact-btn-icon"></div>
     </div>
-    <!-- END Contact button -mobile -->
+    
     <div class="page-header_contact">
-      <div class="page-header_wrapper container">
+      <div class="page-header_wrapper">
         <ul class="page-header_contact-list">
-          <li class="page-header_contact-item ">
+          <li class="page-header_contact-item">
             <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
             <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
           </li>
-          <li class="page-header_contact-item ">
+          <li class="page-header_contact-item">
             <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
             <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
           </li>
@@ -42,7 +49,7 @@
           </li>
         </ul>
         <ul class="page-header_contact-list">
-          <li>      
+          <li>
             <a class="social-link link-facebook" href="#">
             </a>
           </li>
@@ -66,44 +73,64 @@
       </div>
     </div>
     <div class="page-header_menu--block js-fixedMenu">
-      <div class="page-header_menu container">
-          <div class="logo">
-            <a href="index.html">
-              <img src="../images/логотип_-removebg-preview.png" alt="Logo"/>
-            </a>
-          </div>
-            <nav class="navbar_menu">
-              <ul class="navbar_menu-list">
-                <li class="navbar_menu-item is-active js-menuItems">
-                  <a class="navbar_menu-link" href="#main">Главная</a
-                  >
+      <div class="page-header_menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/логотип_-removebg-preview.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="navbar_menu js-menu">
+          <ul class="navbar_menu-list">
+            <li class="navbar_menu-item is-active js-menuItems">
+              <a class="navbar_menu-link" href="#main">Главная</a>
+            </li>
+            <li class="navbar_menu-item js-menuItems js-submenu">
+              <a class="navbar_menu-link" href="#route">Наши маршруты</a>
+              <span class="navbar_menu-icon"></span>
+              <ul class="navbar_submenu">
+                <li>
+                  <a href="#">Киев — Санкт-Петербург</a>
+                  <a href="#">Чернигов — Санкт-Петербург</a>
+                  <a  href="#">Санкт-Петербург  — Киев</a>
+                  <a href="#">Санкт-Петербург — Чернигов</a>
                 </li>
-                <li class="navbar_menu-item js-menuItems">
-                  <a class="navbar_menu-link" href="#route"
-                    >Наши маршруты</a
-                  >
+                <li>
+                  <a  href="#">Киев — Псков</a>
+                  <a href="#">Киев — Брянск</a>
+                  <a href="#">Киев — Смоленск</a>
+                  <a href="#">Киев — Новгород-Сиверский</a>
                 </li>
-                <li class="navbar_menu-item js-menuItems">
-                  <a class="navbar_menu-link" href="#services">Наши услуги</a>
+                <li>
+                  <a  href="#">Санкт-Петербург — Псков</a>
+                  <a  href="#">Санкт-Петербург — Брянск</a>
+                  <a href="#">Санкт-Петербург  — Смоленск</a>
+                  <a href="#">Санкт-Петербург  — Новгород-Сиверский</a>
                 </li>
-                <li class="navbar_menu-item js-menuItems">
-                  <a class="navbar_menu-link" href="#bus">Наш автопарк</a>           
-                </li>
-                <li class="navbar_menu-item js-menuItems">
-                  <a class="navbar_menu-link" href="#ticket">Купить билеты</a>
-                </li>
-              </ul>     
-            </nav>   
-          </div>
+              </ul>
+              
+            </li>
+            <li class="navbar_menu-item js-menuItems">
+              <a class="navbar_menu-link" href="#services">Наши услуги</a>
+            </li>
+            <li class="navbar_menu-item js-menuItems">
+              <a class="navbar_menu-link" href="#bus">Наш автопарк</a>
+            </li>
+            <li class="navbar_menu-item js-menuItems">
+              <a class="navbar_menu-link" href="#ticket">Купить билеты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
     <section class="section-banner">
         <div class="section-banner_text-block container">
-          <h1 class="section-banner_title main-title">Автобусные рейсы </br> <span>Киев - Санкт-Петербург - Киев</span></h1>
+          <h1 class="section-banner_title main-title">Автобусные рейсы </br> <span>Киев</span><span> —  </span><span>Санкт-Петербург</span>
+            <span> —  </span><span>Киев</span></h1>
            <p class="section-banner_text">Прямые рейсы без пересадок на таможне, без предоплаты и наценок</p>
         </div>
-       <div class="section-banner_book-block container">
+       <div class="section-banner_book-block">
           <h3 class="section-banner_book-block--title">Поиск автобусных билетов</h3>
           <form class="book-form">
             <div class="book-form_group-block">
@@ -128,7 +155,7 @@
               <div class="book-form_group-block--title">Количество пассажиров:</div>
              <input  class="book-form_group-block--select" type="number">           
             </div>
-            <button class="btn-color">Найти</button>
+            <button class="book-form_btn btn-color">Найти</button>
           </form>
        </div>
       </section>
@@ -318,20 +345,85 @@
             </ul>
         </div>
     </section>
+    <section class="page-buy" id="ticket">
+        <div class="page-buy_title-block">
+            <h2>Купить автобусные билеты</h2>
+            <div class="page-buy_title-block--btn">
+                <button class="btn-color">Купить</button>
+            </div>
+        </div>
+        <div class="container">
+        <div class="page-buy_contact-block">
+                <div class="page-buy_block-left">
+                    <h4 class="section_subtitle">Контакты для заказа билетов</h4>
+                    <p>    У нас  работает телефонная служба продаж, вы можете связаться с нашим менеджером по телефону и забронировать нужный вам билет.</p>
+                    <ul class="page-buy_block-left--contact page-header_contact-list">
+                        <li class="page-header_contact-item ">
+                            <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                            <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                        </li>
+                        <li class="page-header_contact-item ">
+                            <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                            <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                        </li>
+                        <li class="page-header_contact-item">
+                            <img class="item-svg" src="images/icons/mail.svg" alt="">
+                            <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="page-header_contact-list">
+                        <li>
+                            <a class="social-link link-telegram" href="#">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link link-viber" href="#">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link link-whatsapp" href="#">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="page-buy_block-right">
+                <h4 class="section_subtitle">Купить билеты онлайн</h4>
+                <div class="page-buy_block-right--info">
+                    <div class="page-buy_block-right--text">С помощью нашей онлайн системы вы легко сможете купить нужные Вам билеты по нашим маршрутам.</div>
+                    <button class="btn-color">Купить</button>
+                    <div class="page-buy_block-right--text">Также Вы можете приобрести билеты на наши маршруты через интернет платформу продаж: 
+                        <span>busfor.ua,</span>
+                        <span> busfor.ru,</span> 
+                        <span>infobus.eu,</span>
+                        <span>bus.tutu.ru.</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_back-call">
+            <input class="orm_back-call--input" placeholder="Ваш телефон" type="text" name="phone">
+            <button class="btn-transparent">Заказать звонок</button>
+        </div>
+        <div class="page-buy_block-center"> Все билеты на автобус Киев-Санкт-Петербург, Санкт-Петербург-Киев вы можете
+            традиционно приобрести <span> в кассах автовокзалов</span> Киева, Чернигова, Новгород-Сиверского, Брянска,
+            Смоленска, Пскова и Санкт-Петербурга.
+        </div>
+        </div>
+    </section>
     <section class="page-bus" id="bus">
         <h2 class="section_title">Наши автобусы</h2>
           <!-- Swiper -->
-          <div class="page-bus_slider">
+       <div class="page-bus_slider">
       <div class=" swiper-container gallery-top">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(images/bus/busines4.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines4.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines2.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines3.jpg)"></div>
+          <div class="swiper-slide" style="background-image: url(images/bus/busines4.jpg)"></div>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
@@ -351,70 +443,6 @@
       </div>
       </div>
     </section>
-    <section class="page-buy" id="ticket">
-      <div class="page-buy_title-block">
-          <h2 class="page-buy_title-block--title js-animate">Купить автобусные билеты</h2>
-          <div class="page-buy_title-block--btn">
-              <button class="btn-color">Купить билет</button>
-          </div>
-      </div>
-      <div class="container">
-          <div class="page-buy_contact-block">
-              <div class="page-buy_block-left">
-                  <h4 class="section_subtitle">Контакты для заказа билетов</h4>
-                  <p>    У нас  работает телефонная служба продаж, вы можете связаться с нашим менеджером по телефону и забронировать нужный вам билет.</p>
-                  <ul class="page-buy_block-left--contact page-header_contact-list">
-                      <li class="page-header_contact-item ">
-                          <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
-                          <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-                      </li>
-                      <li class="page-header_contact-item ">
-                          <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
-                          <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-                      </li>
-                      <li class="page-header_contact-item">
-                          <img class="item-svg" src="images/icons/mail.svg" alt="">
-                          <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
-                      </li>
-                  </ul>
-                  <ul class="page-header_contact-list">
-                      <li>
-                          <a class="social-link link-telegram" href="#">
-                          </a>
-                      </li>
-                      <li>
-                          <a class="social-link link-viber" href="#">
-                          </a>
-                      </li>
-                      <li>
-                          <a class="social-link link-whatsapp" href="#">
-                          </a>
-                      </li>
-                  </ul>
-                  <div class="form_back-call">
-                      <input class="orm_back-call--input" placeholder="Ваш телефон" type="text" name="phone">
-                      <button class="btn-transparent">Перезвонить</button>
-                  </div>
-              </div>
-          <div class="page-buy_block-right">
-              <h4 class="section_subtitle">Бронировать билеты онлайн</h4>
-              <div class="page-buy_block-right--info">
-                  <button class="btn-color">Купить билет</button>
-                  <div class="page-buy_block-right--text">Вы можете купить билеты на наши маршруты через интернет платформу продаж: </br> 
-                      <span>busfor.ua,</span> </br> 
-                      <span> busfor.ru,</span> </br>
-                      <span>infobus.eu,</span></br>
-                      <span>bus.tutu.ru.</span>
-                   </div>
-              </div>
-          </div>
-      </div>
-      <div class="page-buy_block-center"> Также билеты на автобус Киев-Санкт-Петербург, Санкт-Петербург-Киев вы можете
-          традиционно приобрести <span> в кассах автовокзалов</span> Киева, Чернигова, Новгород-Сиверского, Брянска,
-          Смоленска, Пскова и Санкт-Петербурга.
-      </div>
-      </div>
-  </section>
   </main>
   <div class="call-btn">
       <div class="messenger-list">
@@ -433,22 +461,61 @@
       <div class="call-btn_main js-call-btn">Кнопка cвязи</div>
     </div>
   <footer class="footer">
-      <div class="container">
-          <div class="footer-block">
-              <div class="footer_logo">
-                  <a href="index.html"><img  src="images/logo-light.png" alt="Logo"></a>
+      <div class="footer-block footer-wrapper">
+          <div class="footer_item">
+              <div class="footer_item--about">
+                  <div class="footer_logo">
+                      <a href="index.html"> <img src="images/logo-light.png" alt="logo" /></a>
+                  </div>
+                  <p>
+                      Автотранспортная компания Bussline - лучший и надёжный вариант для каждого путешественника в любой
+                      поездке.
+                  </p>
               </div>
-              <div class="contacts">
-                  <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-                  <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-                  <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
-              </div>
+              <ul class="footer_contact page-header_contact-list">
+                  <li class="page-header_contact-item">
+                      <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                      <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                  </li>
+                  <li class="page-header_contact-item">
+                      <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+                      <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+                  </li>
+                  <li class="page-header_contact-item">
+                      <img class="item-svg" src="images/icons/mail.svg" alt="">
+                      <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
+                  </li>
+              </ul>
           </div>
-          <div class="copyright">© Copyright 2021</div>
+          <div class="footer_item">
+              <div class="footer_subtitle section_title">Наши маршруты</div>
+              <ul class="footer_menu">
+                  <li>
+                      <a href="#">Киев — Санкт-Петербург</a>
+                      <a href="#">Чернигов — Санкт-Петербург</a>
+                      <a href="#">Киев — Псков</a>
+                      <a href="#">Киев — Брянск</a>
+                      <a href="#">Киев — Смоленск</a>
+                      <a href="#">Киев — Новгород-Сиверский</a>
+                  </li>
+                  <li>
+                      <a href="#">Санкт-Петербург — Киев</a>
+                      <a href="#">Санкт-Петербург — Чернигов</a>
+                      <a href="#">Санкт-Петербург — Псков</a>
+                      <a href="#">Санкт-Петербург — Брянск</a>
+                      <a href="#">Санкт-Петербург — Смоленск</a>
+                      <a href="#">Санкт-Петербург — Новгород-Сиверский</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer_item">
+              <button class="footer_btn btn-color">Купить билет</button>
+              <button class="footer_btn btn-transparent">Заказать звонок</button>
+          </div>
       </div>
+      <div class="copyright">© Bussline 2020</div>
   </footer>
-</body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
-
+</body>
 </html>

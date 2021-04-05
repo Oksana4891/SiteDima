@@ -1,22 +1,29 @@
 <header class="page-header" id="main">
-  <!-- Burger button -mobile -->
+  <!-- Header mobile -->
+  <div class="header_inner-mobile">
+    <a class="logo-mobile" href="index.html">
+      <img src="images/logo-light.png" alt="logo" />
+    </a>
+      <div class="page-header_contact-item">
+        <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
+        <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+      </div>
   <div class="burger" id="burger">
-    <div class="burger-icon"></div>
+    <div class="burger_icon">
+      <div class="burger-line"></div>
+    </div>
+    <p>Меню</p>
   </div>
-  <!-- END Burger button     -->
-  <!-- Contact button -mobile -->
-  <div class="contact-btn" id="contact-btn">
-    <div class="contact-btn-icon"></div>
   </div>
-  <!-- END Contact button -mobile -->
+  
   <div class="page-header_contact">
-    <div class="page-header_wrapper container">
+    <div class="page-header_wrapper">
       <ul class="page-header_contact-list">
-        <li class="page-header_contact-item ">
+        <li class="page-header_contact-item">
           <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
           <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
         </li>
-        <li class="page-header_contact-item ">
+        <li class="page-header_contact-item">
           <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
           <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
         </li>
@@ -26,7 +33,7 @@
         </li>
       </ul>
       <ul class="page-header_contact-list">
-        <li>      
+        <li>
           <a class="social-link link-facebook" href="#">
           </a>
         </li>
@@ -50,34 +57,53 @@
     </div>
   </div>
   <div class="page-header_menu--block js-fixedMenu">
-    <div class="page-header_menu container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="../images/логотип_-removebg-preview.png" alt="Logo"/>
-          </a>
-        </div>
-          <nav class="navbar_menu">
-            <ul class="navbar_menu-list">
-              <li class="navbar_menu-item is-active js-menuItems">
-                <a class="navbar_menu-link" href="#main">Главная</a
-                >
+    <div class="page-header_menu">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/логотип_-removebg-preview.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="navbar_menu js-menu">
+        <ul class="navbar_menu-list">
+          <li class="navbar_menu-item is-active js-menuItems">
+            <a class="navbar_menu-link" href="#main">Главная</a>
+          </li>
+          <li class="navbar_menu-item js-menuItems js-submenu">
+            <a class="navbar_menu-link" href="#route">Наши маршруты</a>
+            <span class="navbar_menu-icon"></span>
+            <ul class="navbar_submenu">
+              <li>
+                <a href="#">Киев — Санкт-Петербург</a>
+                <a href="#">Чернигов — Санкт-Петербург</a>
+                <a  href="#">Санкт-Петербург  — Киев</a>
+                <a href="#">Санкт-Петербург — Чернигов</a>
               </li>
-              <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#route"
-                  >Наши маршруты</a
-                >
+              <li>
+                <a  href="#">Киев — Псков</a>
+                <a href="#">Киев — Брянск</a>
+                <a href="#">Киев — Смоленск</a>
+                <a href="#">Киев — Новгород-Сиверский</a>
               </li>
-              <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#services">Наши услуги</a>
+              <li>
+                <a  href="#">Санкт-Петербург — Псков</a>
+                <a  href="#">Санкт-Петербург — Брянск</a>
+                <a href="#">Санкт-Петербург  — Смоленск</a>
+                <a href="#">Санкт-Петербург  — Новгород-Сиверский</a>
               </li>
-              <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#bus">Наш автопарк</a>           
-              </li>
-              <li class="navbar_menu-item js-menuItems">
-                <a class="navbar_menu-link" href="#ticket">Купить билеты</a>
-              </li>
-            </ul>     
-          </nav>   
-        </div>
+            </ul>
+            
+          </li>
+          <li class="navbar_menu-item js-menuItems">
+            <a class="navbar_menu-link" href="#services">Наши услуги</a>
+          </li>
+          <li class="navbar_menu-item js-menuItems">
+            <a class="navbar_menu-link" href="#bus">Наш автопарк</a>
+          </li>
+          <li class="navbar_menu-item js-menuItems">
+            <a class="navbar_menu-link" href="#ticket">Купить билеты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

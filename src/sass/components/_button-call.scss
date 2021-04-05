@@ -48,14 +48,20 @@
   }
 }
 
+.messenger-list {
+  position: relative;
+  z-index: -1;
+}
+
 .messenger_bnt {
   display: block;
   width: 80px;
   height: 80px;
-  margin-bottom: 15px;
+  bottom: 115px;
   transform: rotate(180deg);
   opacity: 0;
   transition: all 0.2s ease-out;
+  pointer-events: none;
 
   @media screen and (max-width: 576px) {
     width: 60px;
@@ -67,6 +73,11 @@
 .messenger_bnt.is-open {
   transform: rotate(0deg);
   opacity: 1;
+  pointer-events: auto;
+}
+
+.messenger_bnt.is-open .messenger-list {
+  z-index: 210;
 }
 
 .call-btn_icon {

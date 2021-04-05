@@ -1,6 +1,4 @@
-'use strict';
-
-// Slick slider
+// Swipper slider
 
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
@@ -9,6 +7,7 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 });
+
 
 const galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
@@ -20,6 +19,7 @@ const galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs,
   },
 });
+
 
 // Open call button
 
@@ -103,16 +103,16 @@ links.forEach(link => {
   });
 });
 
+// Animation scroll
+
 function animOnScroll(animSelector, animActiveClass) {
-  console.log('ku-ku');
 
   const animItems = document.querySelectorAll(animSelector);
-  console.log(animItems);
 
   function offsetTop(el) {
     const rest = el.getBoundingClientRect(),
-          scrollTop = window.pageYOffset || document.documentElement.scrollTop,
-          topHight = rest.top + scrollTop;
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop,
+      topHight = rest.top + scrollTop;
     return topHight;
   }
   if (animItems.length > 0) {
@@ -137,3 +137,39 @@ function animOnScroll(animSelector, animActiveClass) {
 }
 
 animOnScroll('.js-animate', 'is_active');
+
+
+
+//   Burger menu screen <= 768
+
+const burger = document.querySelector('#burger');
+const burgerMenu = document.querySelector('.js-menu');
+
+burger.onclick = function () {
+  burger.classList.toggle('burger_active');
+  burgerMenu.classList.toggle('is-open');
+};
+
+
+// Open-close submenu screen <=768
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    if (item.classList.contains("js-submenu")) {
+      if (item.classList.contains("is-open")) {
+        item.classList.remove("is-open");
+        burger.classList.toggle('burger_active');
+        burgerMenu.classList.toggle('is-open');
+        return;
+      }
+      item.classList.add("is-open");
+      return;
+    }
+
+    else {
+      burger.classList.toggle('burger_active');
+      burgerMenu.classList.toggle('is-open');
+    }
+  }
+  );
+});

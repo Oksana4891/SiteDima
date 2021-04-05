@@ -1,5 +1,6 @@
-'use strict'; // Slick slider
+"use strict";
 
+// Swipper slider
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -83,12 +84,10 @@ links.forEach(function (link) {
       }
     }
   });
-});
+}); // Animation scroll
 
 function animOnScroll(animSelector, animActiveClass) {
-  console.log('ku-ku');
   var animItems = document.querySelectorAll(animSelector);
-  console.log(animItems);
 
   function offsetTop(el) {
     var rest = el.getBoundingClientRect(),
@@ -115,4 +114,32 @@ function animOnScroll(animSelector, animActiveClass) {
   }
 }
 
-animOnScroll('.js-animate', 'is_active');
+animOnScroll('.js-animate', 'is_active'); //   Burger menu screen <= 768
+
+var burger = document.querySelector('#burger');
+var burgerMenu = document.querySelector('.js-menu');
+
+burger.onclick = function () {
+  burger.classList.toggle('burger_active');
+  burgerMenu.classList.toggle('is-open');
+}; // Open-close submenu screen <=768
+
+
+menuItems.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    if (item.classList.contains("js-submenu")) {
+      if (item.classList.contains("is-open")) {
+        item.classList.remove("is-open");
+        burger.classList.toggle('burger_active');
+        burgerMenu.classList.toggle('is-open');
+        return;
+      }
+
+      item.classList.add("is-open");
+      return;
+    } else {
+      burger.classList.toggle('burger_active');
+      burgerMenu.classList.toggle('is-open');
+    }
+  });
+});

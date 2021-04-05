@@ -1,47 +1,74 @@
 .page-buy {
-  padding: 110px 0px 40px;
+  padding: 0px 0px 40px;
 
   &_title-block {
     display: block;
-    padding: 40px 10%;
-    background: $add-background-color;
+    padding: 30px 10%;
+    background: $main-background-color;
     color: #fff;
-    font-size: 40px;
+    line-height: 1;
+    font-size: 36px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-
-    &--title {
-      opacity: 0;
-      transform: translate3d(-100%, 0, 0);
-      transition: all 0.8s ease 0s;
-
-      &.is_active {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
+    @media screen and (max-width: 1199px) {
+      font-size: 30px;
+      padding: 25px 5%;
     }
-    
+    @media screen and (max-width: 768px) {
+      display: block;
+      font-size: 24px;
+      text-align: center;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+
     &--btn {
       button {
         margin-top: 10px;
         min-height: 65px;
+        @media screen and (max-width: 768px) {
+          margin-top: 20px;
+          min-height: 50px;
+        }
       }
     }
   }
 
   &_contact-block {
     background: url(../images/call.png);
-    background-position: 60% bottom;
+    background-position: 45% bottom;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1199px) {
+      background-position: 40% bottom;
+      background-size: 30%;
+    }
+    @media screen and (max-width: 768px) {
+      background-image: none;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .section_subtitle {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
   }
 
   &_block-left {
     width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
     &--contact {
       display: block;
       margin: 30px 0px;
@@ -53,32 +80,48 @@
   }
 
   &_block-right {
-    width: 25%;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     &--info {
-      margin: 30px 15px;
+      margin: 16px 0px;
 
       button {
+        display: block;
+        margin: 30px auto;
         border: 1px solid $main-text-color;
       }
     }
 
     &--text {
-      padding-top: 20px;
+      text-align: justify;
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
 
       span {
+        display: block;
+        padding: 5px 20px;
         text-decoration: underline;
         font-weight: 500;
         line-height: 1.4;
+        @media screen and (max-width: 768px) {
+          display: inline;
+        }
       }
     }
   }
 
   &_block-center {
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin-top: 50px;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 992px) {
+      font-size: 18px;
+    }
 
     span {
       font-weight: 700;
