@@ -126,7 +126,7 @@
   <main>
     <section class="pageRoute-banner section-banner" style="background-image: url(images/route/sanct-peterburg-bg.jpg)">
       <div class="pageRoute-banner_text-block container">
-        <h1 class="page-title">Автобусные перевозки </br> <span>Киев — Санкт-Петербург</span> </h1>
+        <h1 class="page-title">Автобусные перевозки <br> <span>Киев — Санкт-Петербург</span> </h1>
 
         <ul class="pageRoute-banner_list">
           <li><a href="index.html">Главная</a></li>
@@ -136,23 +136,15 @@
       </div>
     </section>
     <section class="page-schedule">
-      <div class="page-schedule_info-block container">
+      <div class="container">
+      <div class="page-schedule_info-block">
         <div class="page-schedule_info-block-left">
           <p class="page-schedule-text">Автотранспортная компания Bussline - лучший и надёжный перевозчик, для
             <strong>путешествия в Санкт-Петербург с Киева и Чернигова </strong>.
           </p>
-          <p class="page-schedule-text">Компания Bussline предоставляет
-            вам комфортные условия, которые сделают вашу поездку Киев - Санкт-Петербург максимально удобной для вас. В
-            наших автобусах, есть климат контроль (кондиционер), бесплатный Wi-Fi , у вас будут индивидуальные мониторы
-            в спинках сидений, индивидуальные столики в спинках сидений, розетки 220В на каждую пару сидений, где вы
-            можете с комфортом зарядить свой мобильный телефон.
-          </p>
-          <p class="page-schedule-text"> Во время поездки наша компания предлагает чай/кофе и различные снеки. На борту
-            наших автобусов
-            работают профессиональные водители, а также стюардесса которая будет вас сопровождать от точки А до точки Б.
-          </p>
+          <div>
           <h3 class="page-schedule_subtitle section_subtitle"> Информация про рейс Киев - Санкт-Петербург</h3>
-          <h4>Отправление:</h4>
+          <h4 class="time-info--title">Отправление:</h4>
           <div class="time-info">
             <span class="time">10.30</span>
             <span class="place"> — г. Киев, ул. Набережно-Печерская дорога 10-а АС "Выдубичи"</span>
@@ -162,95 +154,147 @@
             <span class="place"> — г. Чернигов, проспект Победы, 3, Автовокзал-1 </span>
           </div>
 
-          <h4>Прибытие:</h4>
+          <h4 class="time-info--title">Прибытие:</h4>
           <div class="time-info">
             <span class="time">11.30</span>
             <span class="place"> — г. Санкт-Петербург, наб. Обводного канала 36, Автовокзал-2
             </span>
           </div>
-          <button class="page-schedule_btn btn-color">Купить билет</button>
+          </div>
         </div>
         <div class="page-schedule_info-block-right">
           <div class="schedule-box">
-            <h4 class="schedule-box_title section_subtitle">Рaсписание автобусов Киев — Санкт-Петербург на
-              <span>май</span> </h4>
-            <img src="images/schedule.jpg" alt="schedule">
-          </div>
-          <div class="schedule-box">
-            <h4 class="schedule-box_title section_subtitle ">Рaсписание автобусов Киев — Санкт-Петербург на
-              <span>июнь</span></h4>
-            <img src="images/schedule.jpg" alt="schedule">
+            <h4 class="schedule-box_title section_subtitle">Рaсписание автобусов <br> Киев — Санкт-Петербург</h4>
+            <div class="schedule-box--year">2021 год</div>
+            <div class="select-box">
+            <span>Выберете нужный Вам месяц:</span>
+            <select class="select-month js-select-month" name="month">
+              <option value="may">Май</option>
+              <option value="june">Июнь</option>
+              <option value="july">Июль</option>
+              <option value="august">Август</option>
+              <option value="september">Сентябрь</option>
+          </select>
+          </div>          
+          
+          <div>
+            <div class="schedule-box--month">
+              <img class="js-schedule" data-name="may" src="images/schedule/kievpiter/may.png" alt="schedule-may">
+              <img  class="js-schedule" data-name="june" src="images/schedule/kievpiter/jule.png" alt="schedule-june">
+              <img class="js-schedule is-active" data-name="july" src="images/schedule/kievpiter/july.png" alt="schedule-july">
+              <img class="js-schedule" data-name="august" src="images/schedule/kievpiter/august.png" alt="schedule-august">
+              <img class="js-schedule" data-name="september" src="images/schedule/kievpiter/september.png" alt="schedule-september">
+            </div>
           </div>
         </div>
+        </div>
+      </div>
+      <h5 class="total-price"> Стоимость билетов Киев — Санкт-Петербург: <span>1 200 грн / 1 800 руб.</span> </h5>
+      <p class="page-schedule-text">Компания Bussline предоставляет
+        вам комфортные условия, которые сделают ваш проезд <strong>Киев —  Санкт-Петербург</strong> максимально удобной для вас. В
+        наших автобусах, есть климат контроль (кондиционер), бесплатный Wi-Fi , у вас будут индивидуальные мониторы
+        в спинках сидений, индивидуальные столики в спинках сидений, розетки 220В на каждую пару сидений, где вы
+        можете с комфортом зарядить свой мобильный телефон.
+      </p>
+      <p class="page-schedule-text"> Во время поездки наша компания предлагает чай/кофе и различные снеки. На борту
+        наших автобусов
+        работают профессиональные водители, а также стюардесса которая будет вас сопровождать от точки А до точки Б.
+      </p>
       </div>
     </section>
-    <div class="container">
-      <h4 class="schedule-box_title section_subtitle">Рaсписание автобусов Киев — Санкт-Петербург </h4>
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FKiev&amp;src=a2puMGhvcjNrYmk2ODRkY2U4aTg4ZXZqZzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;showTz=0&amp;showNav=1&amp;hl=ru"
-        style="border-width: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <section class="page-buy" id="ticket">
+    <div class="page-buy_title-block">
+      <h2>Купить автобусные билеты</h2>
     </div>
-    <section class="page-buy">
-      <div class="container">
-        <div class="page-buy_contact-block">
-          <div class="page-buy_block-left">
-            <h4 class="section_subtitle">Контакты для заказа билетов</h4>
-            <p> У нас работает телефонная служба продаж, вы можете связаться с нашим менеджером по телефону и
-              забронировать нужный вам билет.</p>
-            <ul class="page-buy_block-left--contact page-header_contact-list">
-              <li class="page-header_contact-item ">
-                <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
-                <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-              </li>
-              <li class="page-header_contact-item ">
-                <img class="item-svg" src="images/icons/mobile_icon.svg" alt="">
-                <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-              </li>
-              <li class="page-header_contact-item">
-                <img class="item-svg" src="images/icons/mail.svg" alt="">
-                <a class="page-header_contact-link item-mail" href="mailto:#">site@gmail.com</a>
-              </li>
-            </ul>
-            <ul class="page-header_contact-list">
-              <li>
-                <a class="social-link link-telegram" href="#">
-                </a>
-              </li>
-              <li>
-                <a class="social-link link-viber" href="#">
-                </a>
-              </li>
-              <li>
-                <a class="social-link link-whatsapp" href="#">
-                </a>
-              </li>
-            </ul>
-            <div class="form_back-call">
-              <input class="orm_back-call--input" placeholder="Ваш телефон" type="text" name="phone">
-              <button class="btn-transparent">Перезвонить</button>
-            </div>
-          </div>
-          <div class="page-buy_block-right">
-            <h4 class="section_subtitle">Бронировать билеты онлайн</h4>
-            <div class="page-buy_block-right--info">
-              <button class="btn-color">Купить билет</button>
-              <div class="page-buy_block-right--text">Вы можете купить билеты на наши маршруты через интернет платформу
-                продаж: </br>
-                <span>busfor.ua,</span> </br>
-                <span> busfor.ru,</span> </br>
-                <span>infobus.eu,</span></br>
-                <span>bus.tutu.ru.</span>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+      <div class="page-buy_contact-block">
+        <div class="page-buy_block-left">
+          <h4 class="section_subtitle">Контакты для заказа билетов</h4>
+          <p>
+            У нас работает телефонная служба продаж, вы можете связаться с нашим
+            менеджером по телефону и забронировать нужный вам билет.
+          </p>
+          <ul class="page-buy_block-left--contact page-header_contact-list">
+            <li class="page-header_contact-item">
+              <img class="item-svg" src="images/icons/mobile_icon.svg" alt="" />
+              <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+            </li>
+            <li class="page-header_contact-item">
+              <img class="item-svg" src="images/icons/mobile_icon.svg" alt="" />
+              <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
+            </li>
+            <li class="page-header_contact-item">
+              <img class="item-svg" src="images/icons/mail.svg" alt="" />
+              <a class="page-header_contact-link item-mail" href="mailto:#"
+                >site@gmail.com</a
+              >
+            </li>
+          </ul>
+          <ul class="page-header_contact-list">
+            <li>
+              <a class="social-link link-telegram" href="#"> </a>
+            </li>
+            <li>
+              <a class="social-link link-viber" href="#"> </a>
+            </li>
+            <li>
+              <a class="social-link link-whatsapp" href="#"> </a>
+            </li>
+          </ul>
         </div>
-        <div class="page-buy_block-center"> Также билеты на автобус Киев-Санкт-Петербург, Санкт-Петербург-Киев вы можете
-          традиционно приобрести <span> в кассах автовокзалов</span> Киева, Чернигова, Новгород-Сиверского, Брянска,
-          Смоленска, Пскова и Санкт-Петербурга.
+        <div class="page-buy_block-right">
+          <h4 class="section_subtitle">Купить билеты онлайн</h4>
+          <div class="page-buy_block-right--info">
+            <div class="page-buy_block-right--text">
+              С помощью нашей онлайн системы вы легко сможете купить нужные Вам
+              билеты по нашим маршрутам.
+            </div>
+            <button class="btn-color">Купить</button>
+            <div class="page-buy_block-right--text">
+              Также Вы можете приобрести билеты на наши маршруты через интернет
+              платформу продаж:
+              <span>busfor.ua,</span>
+              <span> busfor.ru,</span>
+              <span>infobus.eu,</span>
+              <span>bus.tutu.ru.</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="form_back-call">
+        <input
+          class="orm_back-call--input"
+          placeholder="Ваш телефон"
+          type="text"
+          name="phone"
+        />
+        <button class="btn-transparent">Заказать звонок</button>
+      </div>
+      <div class="page-buy_block-center">
+        Все билеты на автобус Киев-Санкт-Петербург, Санкт-Петербург-Киев вы можете
+        традиционно приобрести <span> в кассах автовокзалов</span> Киева,
+        Чернигова, Новгород-Сиверского, Брянска, Смоленска, Пскова и
+        Санкт-Петербурга.
+      </div>
+    </div>
+  </section>
   </main>
+  <div class="call-btn">
+      <div class="messenger-list">
+        <a class="messenger_bnt" href="tg://resolve?domain=busrentalcompany">
+          <img class="call-btn_icon" src="images/btn/telegram.svg" alt="telegram-icon">
+        </a>
+        <a class="messenger_bnt" href="viber://chat?number=380637334078">
+          <img class="call-btn_icon" src="images/btn/Viber_icon.svg" alt="icon phone">
+        </a>
+        <a class="messenger_bnt" href="whatsapp://send/?phone=+380637334078">
+          <img class="call-btn_icon" src="images/btn/whatsapp.svg" alt="whatsApp-icon">
+        </a>
+        <a class="messenger_bnt" href="tel:+38637334078" target="_blank"><img class="call-btn_icon" src="images/btn/mobile_icon.svg"
+            alt="mobile-icon"></a>
+      </div>
+      <div class="call-btn_main js-call-btn">Кнопка cвязи</div>
+    </div>
   <footer class="footer">
       <div class="footer-block footer-wrapper">
           <div class="footer_item">
@@ -307,6 +351,6 @@
       <div class="copyright">© Bussline 2020</div>
   </footer>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
-
 </html>

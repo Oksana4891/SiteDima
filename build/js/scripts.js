@@ -142,4 +142,30 @@ menuItems.forEach(function (item) {
       burgerMenu.classList.toggle('is-open');
     }
   });
-});
+}); // Filter schedule by month
+
+function filterMonth() {
+  var selectMonth = document.querySelector(".js-select-month");
+
+  if (selectMonth == null) {
+    console.log("null");
+  }
+
+  var schedule = document.querySelectorAll(".js-schedule");
+  selectMonth.addEventListener("change", function () {
+    var _this = this;
+
+    console.log(this.value);
+    console.log(schedule);
+    schedule.forEach(function (item) {
+      item.classList.remove('is-active');
+
+      if (item.dataset.name === _this.value) {
+        console.log(item.dataset.name);
+        item.classList.add('is-active');
+      }
+    });
+  });
+}
+
+filterMonth();

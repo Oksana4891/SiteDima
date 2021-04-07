@@ -51,6 +51,7 @@
     position: relative;
     padding: 30px 10px 20px;
     margin-bottom: 20px;
+
     &::after {
       position: absolute;
       content: ' ';
@@ -68,11 +69,6 @@
     text-align: justify;
   }
 
-  &_btn {
-    border: 1px solid $main-text-color;
-    display: block;
-    margin: 30px auto;
-  }
 
   &_info-block {
     display: flex;
@@ -87,7 +83,7 @@
 
       .schedule-box {
         &_title {
-          margin: 0px 80px 30px ;
+          margin: 0px 80px 10px;
           text-align: center;
 
           span {
@@ -95,17 +91,84 @@
           }
         }
 
-        img {
-          max-width: 80%;
-          display: block;
-          margin: 0px auto 30px;
+        &--year {
+          color: $main-background-color;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 500;
+          text-decoration: underline;
+        }
 
+        img {
+          width: 450px;
+          height: 250px;
+          display: none;
+          margin: 40px auto 30px;
+        }
+
+        .is-active {
+          display: block;
+        }
+      }
+
+      .select-box {
+        margin: 20px 30px;
+
+        select {
+          margin-left: 10px;
+          width: 130px;
+          padding: 5px;
+          font-size: 16px;
+          color: $add-background-color;
+          border: 1px solid $add-background-color;
+          font-weight: 500;
         }
       }
     }
   }
 
+  .time-info--title {
+    color: $main-title-color;
+  }
+
   .time-info {
     margin: 10px;
+
+    .time {
+      font-weight: 600;
+      color: $main-title-color;
+    }
+  }
+
+  .total-price {
+    position: relative;
+    display: inline-block;
+
+    margin: 60px 20px 20px;
+    color: $hover-text-color;
+    font-size: 22px;
+    padding: 10px 10px 10px 60px;
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 60px;
+      height: 40px;
+      background-image: url(../images/icons/bus-ticket.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 20px;
+      padding: 2px;
+      color: #fff;
+      background-color: #0088cc;
+    }
   }
 }

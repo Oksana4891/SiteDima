@@ -10,7 +10,7 @@
     font-size: 36px;
     font-weight: 700;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and (max-width: 1199px) {
       font-size: 30px;
       padding: 25px 5%;
@@ -24,16 +24,6 @@
       font-size: 20px;
     }
 
-    &--btn {
-      button {
-        margin-top: 10px;
-        min-height: 65px;
-        @media screen and (max-width: 768px) {
-          margin-top: 20px;
-          min-height: 50px;
-        }
-      }
-    }
   }
 
   &_contact-block {
