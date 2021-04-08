@@ -69,4 +69,7 @@
     line-height: 1.13333;
     font-size: 40px;
   }
+  @media screen and (max-width: 576px) {
+    text-align: center;
+  }
 }
