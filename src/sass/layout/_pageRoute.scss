@@ -1,12 +1,13 @@
 .pageRoute-banner {
   color: #ffff;
   width: 100%;
-  height: 800px;
+  height: 600px;
   min-height: 0;
-  object-fit: cover;
+  background-position: center 40%;
+  background-size: cover;
   z-index: 1;
   @media screen and (max-width: 1199px) {
-    height: 650px;
+    height: 500px;
   }
   @media screen and (max-width: 576px) {
     height: 400px;

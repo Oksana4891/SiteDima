@@ -180,17 +180,14 @@ function filterMonth() {
   const selectMonth = document.querySelector(".js-select-month");
 
   if(selectMonth == null) {
-    console.log("null");
+    return;
   }
   const schedule = document.querySelectorAll (".js-schedule");
   selectMonth.addEventListener("change", function () {
-    console.log(this.value);
-    console.log(schedule);
     schedule.forEach(item => {
      
       item.classList.remove('is-active');
       if (item.dataset.name === this.value) { 
-        console.log(item.dataset.name);
         item.classList.add('is-active');
       }
     });
