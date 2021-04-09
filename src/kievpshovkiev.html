@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Placeholder title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  //= html/pageRout-header.html
+
+  <main>
+    <section class="pageRoute-banner section-banner" style="background-image: url(images/route/pskovbg.jpg)">
+      <div class="pageRoute-banner_text-block container">
+        <h1 class="page-title">Автобусные перевозки <br> <span>Киев - Псков - Киев </span> </h1>
+
+        <ul class="pageRoute-banner_list">
+          <li><a href="index.html">Главная</a></li>
+          <li> <a href="index.html#route">Наши маршруты</a></li>
+          <li>Киев - Псков - Киев </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-schedule">
+      <div class="container">
+      <div class="page-schedule_info-block">
+        <div class="page-schedule_info-block-left">
+          <p class="page-schedule-text">Автотранспортная компания Bussline - лучший и надёжный перевозчик, для
+            <strong>путешествия в Псков с Киева и Чернигова </strong>.
+          </p>
+          <div>
+          <h3 class="page-schedule_subtitle section_subtitle"> Информация про рейс  Киев - Псков:</h3>
+          <h4 class="time-info--title">Отправление:</h4>
+          <div class="time-info">
+            <span class="time">10.30</span>
+            <span class="place"> — г. Киев, ул. Набережно-Печерская дорога 10-а АС "Выдубичи"</span>
+          </div>
+          <div class="time-info">
+            <span class="time">12.40</span>
+            <span class="place"> — г. Чернигов, проспект Победы 3, Автовокзал-1 </span>
+          </div>
+          <h4 class="time-info--title">Прибытие:</h4>
+          <div class="time-info">
+            <span class="time">06.45</span>
+            <span class="place"> — г. Псков ул. Вокзальная 21, Псков Автовокзал
+            </span>
+          </div>
+          </div>
+          <div>
+            <h3 class="page-schedule_subtitle section_subtitle"> Информация про рейс Псков - Киев:</h3>
+            <h4 class="time-info--title">Отправление:</h4>
+            <div class="time-info">
+              <span class="time">23.40</span>
+              <span class="place"> — г. Псков ул. Вокзальная 21, Псков Автовокзал </span>
+            </div>
+  
+            <h4 class="time-info--title">Прибытие:</h4>
+            <div class="time-info">
+              <span class="time">18.30</span>
+              <span class="place"> — г. Чернигов, проспект Победы, 3, Автовокзал-1 </span>
+            </div>
+            <div class="time-info">
+              <span class="time">21.30</span>
+              <span class="place"> — г. Киев, ул. Набережно-Печерская дорога 10-а АС "Выдубичи"
+              </span>
+            </div>
+            </div>
+        </div>
+        <div class="page-schedule_info-block-right">
+        <div class="schedule-box">
+            <h4 class="schedule-box_title section_subtitle">Рaсписание автобусов <br> Киев — Псков </h4>
+            <div class="schedule-box--year">2021 год</div>
+            <div class="select-box">
+            <span>Выберете нужный Вам месяц:</span>
+            <select class="select-month js-select-month" name="month">
+              <option value="may">Май</option>
+              <option value="june">Июнь</option>
+              <option value="july">Июль</option>
+              <option value="august">Август</option>
+              <option value="september">Сентябрь</option>
+          </select>
+          </div>          
+          
+          <div>
+            <div class="schedule-box--month">
+              <img class="js-schedule is-active" data-name="may" src="images/schedule/kiev/may.png" alt="schedule-may">
+              <img  class="js-schedule" data-name="june" src="images/schedule/kiev/jule.png" alt="schedule-june">
+              <img class="js-schedule" data-name="july" src="images/schedule/kiev/july.png" alt="schedule-july">
+              <img class="js-schedule" data-name="august" src="images/schedule/kiev/august.png" alt="schedule-august">
+              <img class="js-schedule" data-name="september" src="images/schedule/kiev/september.png" alt="schedule-september">
+            </div>
+          </div>
+        </div>
+        <div class="schedule-box">
+          <h4 class="schedule-box_title section_subtitle">Рaсписание автобусов <br>Псков —  Киев </h4>
+          <div class="schedule-box--year">2021 год</div>
+          <div class="select-box">
+          <span>Выберете нужный Вам месяц:</span>
+          <select class="select-month js-select-month" name="month">
+            <option value="may">Май</option>
+            <option value="june">Июнь</option>
+            <option value="july">Июль</option>
+            <option value="august">Август</option>
+            <option value="september">Сентябрь</option>
+        </select>
+        </div>          
+        
+        <div>
+          <div class="schedule-box--month">
+            <img class="js-schedule is-active" data-name="may" src="images/schedule/piter/may.png" alt="schedule-may">
+            <img  class="js-schedule" data-name="june" src="images/schedule/piter/jule.png" alt="schedule-june">
+            <img class="js-schedule" data-name="july" src="images/schedule/piter/jule.png" alt="schedule-july">
+            <img class="js-schedule" data-name="august" src="images/schedule/piter/august.png" alt="schedule-august">
+            <img class="js-schedule" data-name="september" src="images/schedule/piter/september.png" alt="schedule-september">
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <h5 class="total-price"> Стоимость билетов Киев — Псков (Псков — Киев): <span>1 000 грн / 2 500 руб.</span> </h5>
+
+      <p class="page-schedule-text">Компания Bussline предоставляет
+        вам комфортные условия, которые сделают ваш проезд <strong>Киев —  Псков (Псков - Киев)</strong> максимально удобной для вас. В
+        наших автобусах, есть климат контроль (кондиционер), бесплатный Wi-Fi , у вас будут индивидуальные мониторы
+        в спинках сидений, индивидуальные столики в спинках сидений, розетки 220В на каждую пару сидений, где вы
+        можете с комфортом зарядить свой мобильный телефон.
+      </p>
+      <p class="page-schedule-text"> Во время поездки наша компания предлагает чай/кофе и различные снеки. На борту
+        наших автобусов
+        работают профессиональные водители, а также стюардесса которая будет вас сопровождать от точки А до точки Б.
+      </p>
+      </div>
+    </section>
+  //= html/page-buy.html
+  </main>
+  //= html/call-btn.html
+  //= html/footer.html
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</html>
